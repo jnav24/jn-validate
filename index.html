@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="http://code.jquery.com/jquery.min.js"></script>
+	<script src="js/jn-valid.min.js"></script>
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/jn-error.css">	
+</head>
+<body>
+	<div id="wrapper">
+		<form action="index.html" method="post" data-form="demo">
+			<h1>Validate</h1>
+			<div class="half">
+				<label for="">Required Field</label>
+				<input type="text" name="required-field" data-validate="required">
+			</div>
+		
+			<div class="half">
+				<label for="">Minimum Required Field</label>
+				<input type="text" name="min-field" data-validate="required,min" data-min="5">
+			</div>
+		
+			<div class="half">
+				<label for="">Email Field</label>
+				<input type="text" name="email-field" data-validate="required,email">
+			</div>
+		
+			<div class="half">
+				<label for="">Numeric Field</label>
+				<input type="text" name="numeric-field" data-validate="required,numeric">
+			</div>
+		
+			<div class="half">
+				<label for="">Alpha Field</label>
+				<input type="text" name="alpha-field" data-validate="required,alpha">
+			</div>
+		
+			<div class="half">
+				<label for="">Alpha-numeric Field</label>
+				<input type="text" name="alpha-numeric-field" data-validate="required,alphanumeric">
+			</div>
+		
+			<div class="half">
+				<label for="">Date Field (mm/dd/yyyy)</label>
+				<input type="text" name="date-field" data-validate="required,date">
+			</div>
+
+			<div class="half">
+				<label for="">Phone (xxx) xxx-xxxx</label>
+				<input type="text" name="phone-field" data-validate="required,phone">
+			</div>
+
+			<div class="half">
+				<label for="">Password</label>
+				<input type="text" id="password" data-validate="required,equal" data-eq="confirm-password">
+			</div>
+
+			<div class="half">
+				<label for="">Confirm Password</label>
+				<input type="text" data-validate="required,equal" data-eq="password" id="confirm-password">
+			</div>
+
+			<hr>
+
+			<div class="half mo">
+				<label for="">Select field</label>
+				<select name="drop-down" data-validate="required">
+					<option value=""></option>
+					<option value="Yes">Yes</option>
+					<option value="No">No</option>
+				</select>
+			</div>
+
+			<hr>
+
+			<div data-validate="inGroup">
+				<label for="">Radio</label>
+				<input type="radio" name="radio-group">lorem ipsum 1
+				<input type="radio" name="radio-group">lorem ipsum 2
+				<input type="radio" name="radio-group">lorem ipsum 3
+				<input type="radio" name="radio-group">lorem ipsum 4
+			</div>
+			
+			<hr>
+
+			<div data-validate="inGroup">
+				<label for="">CheckBox</label>
+				<input type="checkbox" name="checkbox-group">lorem ipsum 1
+				<input type="checkbox" name="checkbox-group">lorem ipsum 2
+				<input type="checkbox" name="checkbox-group">lorem ipsum 3
+				<input type="checkbox" name="checkbox-group">lorem ipsum 4
+			</div>
+
+			<hr>
+
+			<label for="">Message field</label>
+			<textarea name="textarea" data-validate="required,min" data-min="10"></textarea>
+		
+			<input type="submit" value="Submit">
+		</form>
+	</div>
+</body>
+</html>

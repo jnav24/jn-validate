@@ -1,0 +1,24 @@
+input.error, select.error, textarea.error {
+	background: #FC99A2;
+}
+
+span.error {
+	color: #E5757E;
+	display: block;
+	margin: 0 auto;
+}
+
+.error_container {
+	background: #E5757E;
+	margin-bottom: 20px;
+	padding: 10px;
+}
+
+.error_container span.error {
+	color: #fff;
+	margin-bottom: 5px;
+}
+
+.error_container span.error:last-of-type {
+	margin-bottom: 0;
+}
