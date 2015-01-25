@@ -54,17 +54,3 @@ You can also change the way to display the errors. By adding data-error to the f
 	- will prepend all errors to the body tag
 * form
 	- will prepend all errors to the form tag
-
-
-
-
-
-For instance,
-
-input.error {
-	background: white;
-}
-
-span.error {
-	color: red;
-}
